@@ -1,0 +1,46 @@
+body{
+    margin:auto;
+    padding-top: 0px;
+    max-width:1200px;
+    background: linear-gradient(180deg, #8798C7 0%, #EDEDED 100%);
+    height: 750px;
+    background-repeat: no-repeat
+;
+}
+
+article{
+    max-width: 400px;
+    justify-self: center;
+    border: #20212c;
+    border-style:dashed;
+    border-width: 1.5px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+h1{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size:36px;
+    font-style: normal;
+    line-height: normal;
+    color:#20212c;
+    text-align: center;
+    margin: 15px;
+}
+
+a{
+    font-style: italic;
+    color:#20212c;
+    font-size: 18px;
+}
+
+p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+    color:#323544;
+    margin: 10px 0;
+}
