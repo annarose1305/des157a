@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+<body>
+    <h1>Experiment 2</h1>
+    <p>Get paired with an animal!</p>
+
+    <script>
+        /* This program does a bit but it's pretty simple. First, it asks the user for their name. After putting in the name, it should ask for them to choose a color. When they choose a color, it'll change the paragraph color to their selected choice, if they don't choose one of the provided options, it'll be gray. With their name, it'll tell them that they'll be paired with an animal soon. Then, they'll randomly be paired with an animal from the array and shown the other options they could have been paired with. Without any name provided, it won't pair them but it should still show the pairing options*/
+
+        var name = prompt("Please type in your name", "");
+        var userColor = prompt("Choose a color too: red, green, blue, purple")
+        var animal = ["dog", "cat", "bunny","lion", "bear", "mouse"];
+
+        var color = userColor.toLowerCase();
+
+        if (color === 'red'){
+            document.querySelector('p').style.color = "red";
+        } else if (color === 'green' ){
+            document.querySelector('p').style.color = "green";
+        } else if (color === 'blue'){
+            document.querySelector('p').style.color = "blue";
+        } else if (color === 'purple'){
+            document.querySelector('p').style.color = 'purple';
+        } else{
+            document.querySelector('p').style.color ="gray";
+        }
+        function pairProcess(name){
+
+            var intro;    
+            if(name === null || name === ""){
+                console.log("You didn't put your name, no animal can be paired as this moment.")
+            } else{
+                console.log(`Hello ${name}! Your animal pair will be selected soon!`);
+            }
+            return intro;
+        }
+
+        function randomInt(min,max){
+            return Math.floor((max-min+1) * Math.random())+min;
+        }
+
+        function pair(name,partner){
+            console.log(pairProcess(name));
+            var randomPartner = partner[randomInt(0, partner.length-1)];
+            if(name === null || name === ""){
+                console.log("Error: Pairing incomplete")
+            } else{
+                console.log(`Congratulations ${name}, your pair match is a ${randomPartner}!`);
+            }
+                  
+        }
+
+        pair(name, animal);
+
+        for(var i=0; i<animal.length; i++){
+            console.log(`Here is an option: ${animal[i]}`);
+        }
+    
+    </script>
+
+</body>
+</html>
