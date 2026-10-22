@@ -21,6 +21,7 @@ h2{
 h1, h2{
     font-family: "Montserrat";
     font-style: normal;
+    color:#414555;
 }
 
 main{
@@ -37,6 +38,7 @@ label, .open{
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color:#414555;
 }
 
 .closed{
@@ -69,7 +71,7 @@ form{
     padding: 5px 20px;
     align-self: center;
     border-radius: 20px;
-    background-color:#F1F3F5;
+    background-color:#A2BBC2;
     font-family: "Montserrat";
     font-size: 14px;
 }
@@ -132,6 +134,7 @@ p{
     font-weight: 400;
     font-size: 18px;
     font-style: normal;
+    color:#414555;
 }
 
 .close{
@@ -142,6 +145,7 @@ p{
     background-color:#AEB3C7;
     font-family: "Montserrat";
     font-size: 16px;
+    color:#414555;
 }
 
 
