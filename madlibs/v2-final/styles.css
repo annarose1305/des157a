@@ -71,9 +71,11 @@ form{
     padding: 5px 20px;
     align-self: center;
     border-radius: 20px;
+    border-color: #323c3f;
     background-color:#A2BBC2;
     font-family: "Montserrat";
     font-size: 14px;
+    font-weight: 500;
 }
 
 input[type="text"]:focus {
