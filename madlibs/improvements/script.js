@@ -21,7 +21,7 @@
 
         if (place == ''){
             document.querySelector('#place').focus();
-            alert('please enter a number');
+            
         } else if (drink == ''){
             document.querySelector('#drink').focus();
         }
