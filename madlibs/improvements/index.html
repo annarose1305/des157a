@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadLibs</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <link href = "styles.css" rel="stylesheet">
+
+    <script src="script.js" defer></script> 
+</head>
+
+<body>
+    <h1>My MadLibs Journal</h1>
+
+    <main>
+        <img src="images/journal.png" alt="image of a journal" class="closed" width="360" height="495">
+        <div class="words">
+            <h2>Please fill in the following items:</h2>
+            <form id ="myForm">
+                <label for="place">Your favorite place</label>
+                <input type="text" id="place">
+
+                <label for="drink">Your favorite drink</label>
+                <input type="text" id="drink">
+
+                <label for="animal">Your favorite animal</label>
+                <input type="text" id="animal">
+
+                <label for="verb">A verb ending in -ing</label>
+                <input type="text" id="verb">
+
+                <label for="adj">An adjective</label>
+                <input type="text" id="adj">
+
+                <input type="submit" value="Submit" class="open">
+            </form>
+        </div>
+    </main>
+
+    <section id = "overlay" class="hidden">
+        <div class="open_jrn">
+            <img src="images/open_journal.png" alt="image of an open journal" class="mobile" width="360" height="495" >
+            <img src="images/desktop_journal.png" alt="image of an open journal of 2 sides." class="desktop" width="721" height="495">
+            <div class="content">
+            <div class="madlib">
+                <!-- <p>Dear journal...</p>
+                <p>Today I went to (favorite place). I expected it to go like every other time, but this time it was eventful! I decided to buy (favorite drink) but I spilled it while walking... Why? Because a (favorite animal) was (verb-ing) nearby. It looked so (adjective), so I had to take a moment to admire it.</p>
+
+                <p>It spotted me looking at it and decided to approach me... Only to taste the drink that was on the floor. They hated it.</p> -->
+            </div>
+            <button class="close">close journal</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
