@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #35303E;
+}
+
+h1{
+    text-align: center;
+    color:rgb(224, 209, 231);
+}
+
+.caro_contain{
+    text-align: center;
+    position: relative;
+    display:flex;
+    overflow:hidden;
+    align-items: center;
+    justify-content: center;
+    height:90vh;
+}
+
+.my_caro{
+    transform: scale(1.1);
+    position: relative;
+}
+
+#carousel {
+    position: absolute;
+    top:41%;
+    left:5%;
+    margin:50px auto;
+    width: 90%;
+    display:flex;
+    overflow-x: auto;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0; 
+    height: 350px;
+    transition: all 60s linear;
+}
+
+.my_pics{
+    display:flex;
+    height: 90%;
+    gap:20px;
+}
+
+.my_pics img{
+    border-radius: 10px;
+}
+
+@media only screen and (min-width:750px)
+{
+
+.my_caro{
+    transform: scale(1.25);
+}
+
+.caro_contain{
+    overflow:visible;
+    max-width:1200px;
+
+}
+
+#carousel {
+    top:40%;
+    left:7%;
+    max-width: 85%;
+}
+.slider {
+    height: 400px;
+}
+
+}
