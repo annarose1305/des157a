@@ -1,0 +1,146 @@
+:root {
+    --sliderwidth: ;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #35303E ;
+    overflow: hidden;
+    background-image: url(images/carousel.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Cherry Cream Soda", 'Times New Roman';
+    font-weight: 400;
+    font-style: normal;
+    color:rgb(224, 209, 231);
+}
+
+
+#carousel {
+    position: relative;
+    margin:125px auto;
+    width:80%;
+    top:135px;
+    padding: 20px 0;
+    align-items: center;
+    display:flex;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0; 
+    transition: all 60s linear;
+    position: relative;
+}
+
+.sliderpaused {
+    display: flex;
+    position: absolute;
+    top:0;
+    height: 200px;
+}
+
+.slider div img {
+    height: 275px;
+    width:auto;
+    display: block;
+}
+
+.my_pics, .pics{
+    display:flex;
+    height: 100%;
+    gap:20px;
+    padding-right: 20px;
+}
+
+.my_pics img, .pics img{
+    border-radius: 10px;
+}
+
+.my_pics, .pics {
+   display: flex;
+   align-items: center;
+}
+
+.full{
+    position: relative;
+    display:flex;
+    border-radius: 10px;
+}
+
+.full:hover{
+    transform:scale(1.35);
+    position: relative;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.overlay{
+    position:absolute;
+    left:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(153, 152, 156, 0.8);
+    border-radius: 10px;
+    opacity:0;
+    box-sizing: border-box;
+    padding:10px;
+}
+
+p{
+    font-size:18px;
+    color:rgb(26, 25, 26);
+    font-family: "Kiwi Maru", Helvetica;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.full:hover .overlay{
+    opacity:1;
+}
+
+@keyframes moveSlider {
+    from { left: 0; }
+    to { left: var(--sliderwidth) }
+}
+
+.animate {
+    animation-name: moveSlider;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@media only screen and (min-width:750px)
+{
+
+#carousel {
+    margin:50px auto;
+    width:800px;
+}
+
+.slider {
+    height: 400px;
+}
+
+h1{
+    font-size: 48px;
+}
+p{
+    font-size: 20px;
+}
+}
