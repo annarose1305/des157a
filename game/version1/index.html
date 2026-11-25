@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Pig</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Coiny&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet"> 
+    <script src="script.js" defer></script>
+
+
+</head>
+
+<body>
+    <h1>Game of Pig</h1>
+
+    <div class="layout">
+        <div class="card1">
+            <div class="top1">
+                <img src="images/sun.png" alt="image of sun and cloud">
+                <h2 class="player1">Player 1</h2>
+            </div>
+
+            <div class="bottom1">
+                <p class="score_title">Score:</p>
+                <p class="score_amt">8</p>
+            </div>
+        </div>
+
+        <div class="info">
+        <h2>Player 1's turn</h2>
+        <div class="dice">
+            <img src="images/die1.5.png">
+            <img src="images/die2.3.png">
+        </div>
+        <p>Congrats! You rolled 8 stars!</p>
+
+        <div class="buttons">
+        <button> Pass</button>
+        <button> Roll</button>
+        </div>
+        </div>
+
+        <div class="card2">
+            <div class="top2">
+                <img src="images/moon.png" alt="image of sun and cloud">
+                <h2 class="player2">Player 2</h2>
+            </div>
+
+            <div class="bottom2">
+                <p class="score_title">Score:</p>
+                <p class="score_amt">0</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="game"></div>
+    <div id="actions"></div>
+    <div id="score"></div>
+</body>
+
+</html>
